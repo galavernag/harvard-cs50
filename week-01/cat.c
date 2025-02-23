@@ -7,7 +7,11 @@ void meow(int times) {
   }
 }
 
-int main(void) {
-  int n = get_int("Number of meow: ");
+int main(void) {  
+  int n;
+  do
+  {
+    n = get_int("Number of meow: ");
+  } while (n < 1);
   meow(n);
 }
